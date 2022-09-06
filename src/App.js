@@ -24,6 +24,7 @@ function App() {
         <Stack direction={'row'} spacing={2} justifyContent={"space-between"}>
           <Sidebar setMode={setMode} mode={mode}/>
           <Feed/>
+          <Rightbar/>
         </Stack>
 
         <Add/>

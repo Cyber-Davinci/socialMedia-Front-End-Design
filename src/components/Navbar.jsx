@@ -53,7 +53,7 @@ function Navbar() {
         width:'100%',
         margin:'0'
     }}>
-      <Container maxWidth="xl">
+      {/* <Container maxWidth="xl" xs={{margin:'0'}}> */}
         <StyledToolbar>
           <Typography
             variant="h6"
@@ -109,7 +109,7 @@ function Navbar() {
           <MenuItem>Account</MenuItem>
           <MenuItem>Logout</MenuItem>
         </Menu>
-      </Container>
+      {/* </Container> */}
     </AppBar>
   );
 }

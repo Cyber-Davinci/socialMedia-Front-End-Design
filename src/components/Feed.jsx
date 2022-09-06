@@ -3,9 +3,9 @@ import {Box, Stack, Skeleton} from '@mui/material';
 import Post from './Post'
 
 function Feed() {
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
   return (
-    <Box flex={4} p={{xs:0, md:2}}>
+    <Box flex={4} p={{xs:2, md:2}}>
         {loading ? (
             <Stack>
                 <Skeleton variant='text' height={100}/>
@@ -19,13 +19,13 @@ function Feed() {
             </Stack>
         ) : (
             <>
-                <Post/>
-                <Post/>
-                <Post/>
-                <Post/>
-                <Post/>
-                <Post/>
-                <Post/>
+                <Post title="Ebrahim" avatarLetter='E'/>
+                <Post title="Ndimz" avatarLetter='N'/>
+                <Post title='OneNyass' avatarLetter='O'/>
+                <Post title="Davinci" avatarLetter='D'/>
+                <Post title="Warrior" avatarLetter='W'/>
+                <Post title="Ugliest" avatarLetter='U'/>
+                <Post title="Admin" avatarLetter='A'/>
             </>
         )}
     </Box>
